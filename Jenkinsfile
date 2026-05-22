@@ -6,13 +6,7 @@ pipeline {
     }
 
     stages {
-
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/Bhalchandra20299/DevOpsintern.git'
-            }
-        }
-
+        
         stage('Compile') {
             steps {
                 sh 'mvn clean compile'
